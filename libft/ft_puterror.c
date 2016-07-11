@@ -1,20 +1,19 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   rtv1.c                                             :+:      :+:    :+:   */
+/*   error.c                                            :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: ghavenga <marvin@42.fr>                    +#+  +:+       +#+        */
+/*   By: oexall <marvin@42.fr>                      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2016/07/11 10:44:49 by ghavenga          #+#    #+#             */
-/*   Updated: 2016/07/11 11:21:17 by ghavenga         ###   ########.fr       */
+/*   Created: 2016/06/21 09:24:08 by oexall            #+#    #+#             */
+/*   Updated: 2016/07/11 11:24:58 by ghavenga         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "rtv1.h"
+#include "libft.h"
 
-int		main(int argc, char *argv)
+int		ft_puterror(char *str)
 {
-	if (argc < 1)
-	else
-		ft_puterror("No Arguements Given");
+	ft_printf("%s\n", str);
+	exit (1);
 }
