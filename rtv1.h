@@ -6,14 +6,14 @@
 /*   By: ghavenga <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2016/07/11 10:44:20 by ghavenga          #+#    #+#             */
-/*   Updated: 2016/07/12 08:22:09 by ghavenga         ###   ########.fr       */
+/*   Updated: 2016/07/12 08:48:36 by ghavenga         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #ifndef RTV1_H
 # define RTV1_H
 
-# include <minilibx.h>
+# include <mlx.h>
 # include <math.h>
 
 # define FOV 45
@@ -110,5 +110,7 @@ typedef struct		s_cone
 
 /*rtv1.c*/
 int		readscene(int fd, t_scene *scene);
+void	prepscene(t_scene *scene);
+void	assignobject(char **line, t_scene *scene);
 
 #endif
