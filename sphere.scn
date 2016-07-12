@@ -1,0 +1,3 @@
+sphere	400	300	0	10	RED
+light	0	0	100	100	WHITE
+camera	0	0	0
