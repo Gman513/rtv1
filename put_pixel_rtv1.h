@@ -1,5 +1,5 @@
-#ifndef RTV1_H
-# define RTV1_H
+#ifndef PUT_PIXEL_RTV1_H
+# define PUT_PIXEL_RTV1_H
 
 #include <stdio.h>
 #include "mlx.h"
@@ -8,7 +8,7 @@
 # define H 600
 # define W 800
 
-# define WHITE 0xFFFFFF
+# define BLACK  0x000000
 # define RED 0xFF0000
 
 typedef struct	s_vector
@@ -30,6 +30,25 @@ typedef	struct	ray
 	t_vector	direction;
 }				t_ray;
 
+typedef struct  s_light
+{
+    t_vector    origin;
+   // t_colour    intensity;
+}               t_light;
+
+typedef struct  s_colour
+{
+    float       red;
+    float       green;
+    float       blue;
+}               t_colour;
+
+typedef struct  s_material
+{
+    t_colour    diffuse;
+    float       reflection;
+}               t_material;
+
 typedef struct	s_env
 {
     void		*win;
@@ -50,12 +69,5 @@ typedef struct	s_env
 }   §           t_img;
  
  */
-
-typedef struct	s_rgb
-{
-    int			red;
-    int			green;
-    int			blue;
-}				t_rgb;
 
 #endif
