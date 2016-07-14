@@ -6,7 +6,7 @@
 /*   By: ghavenga <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2016/07/11 10:44:20 by ghavenga          #+#    #+#             */
-/*   Updated: 2016/07/12 08:48:36 by ghavenga         ###   ########.fr       */
+/*   Updated: 2016/07/12 10:03:10 by ghavenga         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -42,7 +42,7 @@ typedef struct		s_scene
 typedef	struct		s_camera;
 {
 	t_vertex		*origin;
-	t_plane			*screen;
+	t_vertex		*screen_o;
 }					t_camera;
 
 typedef struct		s_object
